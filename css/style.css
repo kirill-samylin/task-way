@@ -31,11 +31,17 @@
     color: white;
 }
 .fieldset__item {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 .response {
     font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .mgs {
@@ -50,9 +56,15 @@
     margin: 20px 0 0  20px;
 }
 .fieldset__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .route {
     min-width: 328px;
