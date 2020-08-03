@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платные дороги</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Задача "Платные дороги"</h1>
+        </header>
+        <main class="main">
+            <article class="article">
+                <h2 class="article__title">Условие:</h2>
+                <p class="article__paragraph">Сервис третьих лиц подготовил сводную матрицу движения по платным дорогам. В прямоугольной таблице N x M, в каждой клетке которой записано некоторое число, в начале позиции водителя соответствует левая верхняя клетка.</p>
+                <p class="article__paragraph">По спецификации матрицы движение разрешается только в соседнюю клетку либо вправо, либо вниз (влево и вверх перемещаться запрещено). При проходе через клетку с водителя берут столько у.е., какое число записано в этой клетке. Деньги берут также за первую и последнюю клетки его пути.</p>
+                <p class="article__paragraph">Требуется найти минимальную сумму у.е., заплатив которую, водитель может попасть в правый нижний угол.</p>
+            </article>
+            <article class="article">
+                <h2 class="article__title">Входные данные:</h2>
+                <p class="article__paragraph">На вход подается матрица размерностью N x M (1<=N<=20, 1<=M<=20). В каждой ячейке матрицы – размеры штрафов в у.е. за прохождение через соответствующие клетки (числа от 0 до 100).</p>
+            </article>
+            <article>
+                <h2 class="article__title">Выходные данные:</h2>
+                <p class="article__paragraph">В выходной файл запиши минимальную сумму, потратив которую можно попасть в правый нижний угол.</p>
+            </article>
+            <article>
+                <h2 class="article__title">Примеры:</h2>
+                <p class="article__paragraph">**Входные данные**</p>
+                <pre class="article__code">
+[[1, 1, 1, 1], 
+[5, 2, 2, 100], 
+[9, 4, 2, 1]]
+                </pre>
+                <p class="article__paragraph">**Выходные данные**</p>
+                <pre class="article__code">8</pre>
+            </article>
+            <div class="fieldset__list">
+                <fieldset class="fieldset__item">
+                    <legend>Введите массив:</legend>
+                    <textarea class="arr" cols="30" rows="10"></textarea>
+                </fieldset>
+                <fieldset class="fieldset__item">
+                    <legend>Которткий маршрут:</legend>
+                    <pre class="route"></pre>
+                </fieldset>
+            </div>
+            <button class="start">Посчитать</button>
+            <div class="response">
+                <p>Стоимость поездки: </p><p class="mgs"></p>
+            </div>
+        </main>
+    
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
