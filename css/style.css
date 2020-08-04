@@ -1,6 +1,7 @@
 .body {
     background-color: black;
     color: white;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 .page {
     min-width: 425px;
